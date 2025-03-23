@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Welcome Admin</h2>
+        <a href="{{ url_for('admin_logout') }}" class="logout-link">Logout</a>
+
+        <h3>Unknown Queries:</h3>
+        {% if unknown_queries %}
+            <ul>
+            {% for q in unknown_queries %}
+                <li>{{ q }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p style="text-align:center;">No unknown queries!</p>
+        {% endif %}
+
+        <h3>Add New FAQ:</h3>
+        <form method="POST" class="admin-form">
+            <input type="text" name="question" placeholder="Question" required>
+            <textarea name="answer" placeholder="Answer" rows="4" required></textarea>
+            <button type="submit">Add FAQ</button>
+        </form>
+    </div>
+</body>
+</html>

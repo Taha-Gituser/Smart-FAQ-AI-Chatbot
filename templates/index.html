@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alumni Portal Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>🎓 Alumni Portal Chatbot</h2>
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message">Hello! How can I assist you today?</div>
+            <div class="quick-buttons">
+                <button onclick="sendQuick('What is CGPA criteria?')">CGPA Criteria</button>
+                <button onclick="sendQuick('How to register?')">Registration Process</button>
+                <button onclick="sendQuick('Can I apply with backlog?')">Backlog Policy</button>
+                <button onclick="sendQuick('Contact details')">Contact Info</button>
+                <!-- New Buttons Added -->
+                <button onclick="sendQuick('How are interview rounds conducted?')">Interview Rounds</button>
+                <button onclick="sendQuick('Is there any specific resume format to follow?')">Resume Format</button>
+                <button onclick="sendQuick('Is there a deadline for placement registration?')">Placement Deadlines</button>
+                <button onclick="sendQuick('How to contact the Training & Placement Officer?')">T&P Officer Contact</button>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your question here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            let userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === '') return;
+
+            let chatBox = document.getElementById('chat-box');
+            chatBox.innerHTML += `<div class="user-message">${userInput}</div>`;
+            document.getElementById('user-input').value = '';
+
+            fetch('/ask', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                chatBox.innerHTML += `<div class="bot-message">${data.answer}</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            });
+        }
+
+        function sendQuick(message) {
+            document.getElementById('user-input').value = message;
+            sendMessage();
+        }
+    </script>
+</body>
+</html>
