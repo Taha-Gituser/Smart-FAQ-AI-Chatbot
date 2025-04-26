@@ -21,7 +21,7 @@ def load_faq_data():
 def find_best_match(query, faq_data):
     questions = [item['question'] for item in faq_data]
     match, score = process.extractOne(query, questions)
-    if score >= 75:
+    if score >= 90  :
         return next(item for item in faq_data if item['question'] == match)
     else:
         return None
