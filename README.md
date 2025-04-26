@@ -100,6 +100,17 @@ Smart-FAQ-AI-Chatbot/
 ```
 
 ---
+## 📸 Screenshots
+
+### User Chatbot Interface:
+![Chat UI](static/screenshots/chat_ui.png)
+
+### Another Chat Interaction View:
+![Chat UI 2](static/screenshots/chat_ui_2.png)
+
+### Admin Panel Interface:
+![Admin Panel](static/screenshots/admin_panel.png)
+
 
 ## 🙌 Credits
 Developed independently with ❤️ by [Taha](https://github.com/Taha-Gituser)
