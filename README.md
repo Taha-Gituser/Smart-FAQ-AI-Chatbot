@@ -1,7 +1,12 @@
+# 🎓 Smart FAQ AI Chatbot
 
-#  Smart FAQ AI Chatbot
+[![Built with Flask](https://img.shields.io/badge/Built%20with-Flask-blue)](https://flask.palletsprojects.com/)
+[![Python](https://img.shields.io/badge/Python-3.10-green)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)]()
 
 An intelligent, lightweight Flask-based AI chatbot that answers student and alumni queries using smart fuzzy matching, Wikipedia, DuckDuckGo, and Google Search fallback mechanisms.
+
 
 ---
 
