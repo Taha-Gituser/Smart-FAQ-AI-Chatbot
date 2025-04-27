@@ -1,4 +1,4 @@
-# 🎓 Smart FAQ AI Chatbot
+#  Smart FAQ AI Chatbot
 
 [![Built with Flask](https://img.shields.io/badge/Built%20with-Flask-blue)](https://flask.palletsprojects.com/)
 [![Python](https://img.shields.io/badge/Python-3.10-green)](https://www.python.org/)
@@ -10,20 +10,20 @@ An intelligent, lightweight Flask-based AI chatbot that answers student and alum
 
 ---
 
-## 📚 Features
-- 🎯 **Quick FAQs** via smart buttons (CGPA, Registration, Backlogs, Contact Info)
-- 🎯 **Free text queries** with intelligent response matching
-- 🎯 **Self-Learning Mode**: Unknown queries are **automatically logged** for admin review
-- 🎯 **Admin Dashboard**: Admin can view unknown queries and **add new FAQs directly** from a secure panel
-- 🎯 **Wikipedia fallback** for general queries
-- 🎯 **DuckDuckGo Search** fallback for crisp answers
-- 🎯 **Google Search** fallback if nothing found
-- 🎯 **Fully responsive and aesthetic frontend**
-- 🎯 **No external API keys required (safe public deployment)**
+##  Features
+-  **Quick FAQs** via smart buttons (CGPA, Registration, Backlogs, Contact Info)
+-  **Free text queries** with intelligent response matching
+-  **Self-Learning Mode**: Unknown queries are **automatically logged** for admin review
+-  **Admin Dashboard**: Admin can view unknown queries and **add new FAQs directly** from a secure panel
+-  **Wikipedia fallback** for general queries
+-  **DuckDuckGo Search** fallback for crisp answers
+-  **Google Search** fallback if nothing found
+-  **Fully responsive and aesthetic frontend**
+-  **No external API keys required (safe public deployment)**
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** Flask (Python)
 - **AI/Logic:** 
@@ -35,7 +35,7 @@ An intelligent, lightweight Flask-based AI chatbot that answers student and alum
 
 ---
 
-## 🛠️ How to Run Locally
+##  How to Run Locally
 1. Clone this repository:
 
 ```bash
@@ -100,7 +100,7 @@ Smart-FAQ-AI-Chatbot/
 ```
 
 ---
-## 📸 Screenshots
+##  Screenshots
 
 ### User Chatbot Interface:
 ![Chat UI](static/screenshots/chat_ui.png)
@@ -113,6 +113,6 @@ Smart-FAQ-AI-Chatbot/
 
 
 ## 🙌 Credits
-Developed independently with ❤️ by [Taha](https://github.com/Taha-Gituser)
+Developed independently with by [Taha](https://github.com/Taha-Gituser)
 
 ---
